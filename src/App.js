@@ -10,20 +10,6 @@ function App() {
   }
   return (
     <div className="App App-header">
-      {/* <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header> */}
       <div className="calc-container">
         <div className="row">
           <input 
@@ -35,56 +21,121 @@ function App() {
             readOnly />
         </div>
         <div className="row">
-          <div className="col-3">
+          <div className="calc-button col-3">
             <button
-              type="button"
-              className="btn btn-light">
+              className="btn btn-primary">
               +
             </button>
           </div>
-          <div className="col-3">
+          <div className="calc-button col-3">
             <button 
-              type="button"
-              className="btn btn-light">
+              className="btn btn-primary">
                 -
               </button>
           </div>
-          <div className="col-3">
+          <div className="calc-button col-3">
             <button
-              type="button"
-              className="btn btn-light">
+              className="btn btn-primary">
               &times;
             </button>
           </div>
-          <div className="col-3">
+          <div className="calc-button col-3">
             <button
-              type="button"
-              className="btn btn-light">
+              className="btn btn-primary">
               &divide;
             </button>
           </div>
         </div>
         <p></p>
+          <div className="row">
+            <div className="calc-button col-3">
+              <button
+                className="btn btn-light">
+                7
+              </button>
+            </div>
+            <div className="calc-button col-3">
+              <button
+                className="btn btn-light">
+                8
+              </button>
+            </div>
+            <div className="calc-button col-3">
+              <button
+                className="btn btn-light">
+                9
+              </button>
+            </div>
+            <div className="calc-button col-3">
+              <button
+                className="btn btn-primary">
+                AC
+              </button>
+            </div>
+          </div>
+        <p></p>
         <div className="row">
-          <div className="col-3">
+          <div className="calc-button col-3">
             <button
-              type="button"
               className="btn btn-light">
-              7
+                4
+              </button>
+          </div>
+          <div className="calc-button col-3">
+            <button
+              className="btn btn-light">
+              5
             </button>
           </div>
-          <div className="col-3">
-            <button
-              type="button"
-              className="btn btn-light">
-              8
+          <div className="calc-button col-3">
+            <button className="btn btn-light">
+              6
             </button>
           </div>
-          <div className="col-3">
-            <button
-              type="button"
-              className="btn btn-light">
-              9
+          <div className="calc-button col-3">
+            <button className="btn btn-primary">
+
+            </button>
+          </div>
+        </div>
+        <p></p>
+        <div className="row">
+          <div className="calc-button col-3">
+            <button className="btn btn-light">
+              1
+            </button>
+          </div>
+          <div className="calc-button col-3">
+            <button className="btn btn-light">
+              2
+            </button>
+          </div>
+          <div className="calc-button col-3">
+            <button className="btn btn-light">
+              3
+            </button>
+          </div>
+          <div className="calc-button col-3">
+            <button className="btn btn-primary">
+              C
+            </button>
+          </div>
+        </div>
+        <p></p>
+        <div className="row">
+          <div className="calc-button0 col-6">
+            <button className=" col-12 btn btn-light">
+              0
+            </button>
+          </div>
+          <div className="calc-button-dot col-3">
+            <button className="btn btn-light">
+              .
+            </button>
+          </div>
+          <div className="calc-button col-3">
+            <button className="btn btn-primary">
+              =
             </button>
           </div>
         </div>

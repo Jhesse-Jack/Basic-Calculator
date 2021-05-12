@@ -3,7 +3,7 @@
 }
 
 .App-header {
-  background-color: #c6f050;
+  background-image: linear-gradient(-20deg, #b721ff 0%, #21d4fd 100%);
   min-height: 100vh;
   display: flex;
   /* flex-direction: row; */
@@ -11,26 +11,12 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: black;
-  /* padding: 5% 5% 5% 5%; */
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
 
 .calc-container {
-  background-color: rgb(157, 24, 157);
+  background-color: #21d4fd;
   border-radius: 4%;
-  padding: 0.5% 2% 10% 2.5%;
+  padding: 0.5% 2% 2% 2.5%;
   box-shadow: 35px 10px 15px -3px rgba(0,0,0,0.1);
 }
 
@@ -38,4 +24,29 @@
   text-align: right;
   margin: 3%;
   width: 80%;
+}
+
+.calc-button {
+  flex: 0 0 0 !important; 
+  max-width: 100% !important;
+  padding: 0px 7.5px !important;
+  /* box-shadow: 0px 37px 77px 47px rgba(0,0,0,0.1); */
+}
+
+.calc-button0 {
+  flex: 0 0 50% !important;
+  max-width: 100% !important;
+  padding: 0px 7.8px !important;
+  box-shadow: 0px 37px 77px 47px rgba(0,0,0,0.1);
+}
+
+.calc-button-dot {
+  flex: 0 0 2% !important;
+  max-width: 100% !important;
+  padding: 0px 8px !important;
+  box-shadow: 0px 37px 77px 47px rgba(0,0,0,0.1);
+}
+
+.ACbtn {
+  line-height: 2.5 !important;
 }
