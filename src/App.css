@@ -36,8 +36,8 @@
 .calc-button0 {
   flex: 0 0 50% !important;
   max-width: 100% !important;
-  padding: 0px 7.8px !important;
-  box-shadow: 0px 37px 77px 47px rgba(0,0,0,0.1);
+  padding: 0px 0px 0px 24px !important;
+  /* box-shadow: 0px 37px 77px 47px rgba(0,0,0,0.1); */
 }
 
 .calc-button-dot {
@@ -48,5 +48,16 @@
 }
 
 .ACbtn {
-  line-height: 2.5 !important;
+  line-height: 4.6 !important;
+}
+
+.oneandtwo {
+  justify-content: space-between;
+  margin: 0px 1px 0px 7px;
+}
+
+@media only screen and (max-width: 600px) {
+  .calc-container {
+    padding: 15px 20px;
+  }
 }
