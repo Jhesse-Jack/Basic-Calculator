@@ -1,41 +1,34 @@
 import './App.css';
 import React from 'react';
 import './bootstrap.min.css';
+import clear from './components/clear';
+import appendNum from './components/appendNum';
+import chooseOps from './components/chooseOps';
+import compute from './components/compute';
+import updateDisplay from './components/updateDisplay';
 
 function App() {
   // let [nums, setNums] = React.useState()
   // function handleInput(e){
   //   setNums(e.target.value)
   //   console.log(nums)
-  const nums = document.querySelectorAll('[data-number]')
-  const ops = document.querySelectorAll('[data-operation]')
+  let nums = ''
+  const numButts = ({nums, ...props}) => document.querySelectorAll('[data-number]')
+  let ops = ''
+  const operation = ({ops, ...props}) => document.querySelectorAll('[data-operation]')
   const equals = document.querySelector('[data-equals]')
   const ACButt = document.querySelector('[data-all-clear]')
   const previousOps = document.querySelector('[data-previous-operand]')
   const currentOps = document.querySelector('[data-current-operand]')
   console.log(nums)
   console.log(ops)
-  function Calculator(previousOp, currentOp){
+  function Calculator(previousOp, currentOp, ...props){
     previousOp = previousOps
     currentOp = currentOps
     clear()
   }
+  const maincalc = ({calculator, ...props}) => new Calculator(previousOps, currentOps)
 
-  clear = () => {
-
-  }
-  appendNum = (nums) => {
-
-  }
-  chooseOps = (ops) => {
-
-  }
-  compute = () => {
-
-  }
-  updateDisplay = () => {
-    
-  }
   //}
   return (
     <div className="App App-header">
