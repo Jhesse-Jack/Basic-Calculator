@@ -14,4 +14,9 @@ function appendNum() {
     )
 }
 
+appendNum = (num) => {
+    if (num === '.' && CalcPage.currentOp.includes('.')) 
+    return CalcPage.currentOp = CalcPage.currentOp.toString() + num.toString()
+}
+
 export default appendNum;
